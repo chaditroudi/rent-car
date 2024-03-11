@@ -86,24 +86,16 @@
             <div class="card-header">
               <ul class="action">
                 <li class="plus">
-                  <a href="#"
-                    ><i class="icon-plus-alt"></i
-                  ></a>
+                  <a href="#"><i class="icon-plus-alt"></i></a>
                 </li>
                 <li class="edit">
-                  <a href="#"
-                    ><i class="icon-pencil-alt"></i
-                  ></a>
+                  <a href="#"><i class="icon-pencil-alt"></i></a>
                 </li>
                 <li class="delete">
-                  <a href="#"
-                    ><i class="icon-trash mb-3"></i
-                  ></a>
+                  <a href="#"><i class="icon-trash mb-3"></i></a>
                 </li>
                 <li class="information">
-                  <a
-                    routerlink="/cars/car-details"
-                    href="/cars/car-details"
+                  <a routerlink="/cars/car-details" href="/cars/car-details"
                     ><i class="icon-printer"></i
                   ></a>
                 </li>
@@ -202,37 +194,33 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row g-6"></div>
 
-                  <div class="row g-4">
-                    <div class="d-flex">
+                  <div class="row g-2">
                       <div class="col-md-3">
                         <div class="mb-3">
                           <label class="col-form-label">Car</label>
+                         <div class="d-flex">
                           <input
-                            class="form-control"
-                            type="text"
-                            placeholder="No"
-                          />
-                        </div>
-                        <button (click)="modal.open(content)">Tee</button>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="mb-3">
-                        <label class="col-form-label">Car</label>
-                        <input
                           class="form-control"
                           type="text"
                           placeholder="No"
                         />
+                      <button
+                        class="btn btn-outline-primary btn-xs"
+                        (click)="modal.open(content)"
+                      >
+                        Choose
+                      </button>
+                         </div>
                       </div>
-                    </div>
 
+                    </div>
+                  
+                    
                     <div class="col-md-3">
                       <div class="mb-3">
                         <label class="col-form-label">select one</label>
-                        <select class="form-control">
+                        <select class="select form-control">
                           <option>Kia</option>
                           <option>Bmw</option>
                           <option>Hondai</option>
@@ -242,16 +230,27 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                       <div class="mb-3">
                         <label class="col-form-label">Deposit</label>
+                       <div class="d-flex">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="No"
-                        />
-                      </div>
+                        class="form-control"
+                        type="text"
+                        placeholder="Deposit"
+                      />
+                    <button
+                      class="btn btn-outline-primary btn-xs"
+                      (click)="modal.open(content)"
+                    >
+                      Choose
+                    </button>
+                       </div>
                     </div>
+
+                  </div>
+                
+                
                     <div class="col-md-6">
                       <div class="mb-3">
                         <label class="col-form-label">Location</label>
@@ -262,16 +261,26 @@
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                       <div class="mb-3">
                         <label class="col-form-label">Hirer</label>
+                       <div class="d-flex">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="No"
-                        />
-                      </div>
+                        class="form-control"
+                        type="text"
+                        placeholder="Hirer"
+                      />
+                    <button
+                      class="btn btn-outline-primary btn-xs"
+                      (click)="goToHirer()"
+                    >
+                      Choose
+                    </button>
+                       </div>
                     </div>
+
+                  </div>
+                
                     <div class="col-md-12">
                       <div class="mb-3">
                         <label class="col-form-label">Comments </label>
@@ -671,7 +680,10 @@
                         <li [ngbNavItem]="3">
                           <a ngbNavLink>Car body</a>
                           <ng-template ngbNavContent>
-                           <img class="img-fluid w-100" src="assets/images/cars/car_body.png"/>xxxxx
+                            <img
+                              class="img-fluid w-100"
+                              src="assets/images/cars/car_body.png"
+                            />
                           </ng-template>
                         </li>
                       </ul>
@@ -753,105 +765,135 @@
                           <th scope="row">1</th>
                           <td>Kia sportage</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Audi</td>
                           <td>
-                            <button class="btn btn-outline-dark">Choose</button>
+                            <div class="btn btn-outline-dark btn-xs">
+                              Choose
+                            </div>
                           </td>
                         </tr>
                       </tbody>

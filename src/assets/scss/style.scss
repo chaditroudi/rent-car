@@ -1,13 +1,4 @@
-/*! -----------------------------------------------------------------------------------
 
-    Template Name: Cuba Admin
-    Template URI: http://admin.pixelstrap.com/cuba/theme
-    Description: This is Admin theme
-    Author: Pixelstrap
-    Author URI: https://themeforest.net/user/pixelstrap
-
------------------------------------------------------------------------------------
- */
 // *** utils ***
 @import "../scss/utils/variables";
 
@@ -135,8 +126,6 @@ body[class="dark-only"] {
 @import "pages/internationalization.scss";
 @import "pages/job-search.scss";
 @import "pages/jsgrid.scss";
-@import "pages/kanban.scss";
-@import "pages/knowledgebase.scss";
 @import "pages/language.scss";
 @import "pages/learning.scss";
 @import "pages/login.scss";
